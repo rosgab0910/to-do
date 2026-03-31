@@ -2,7 +2,7 @@ const taskBtn = document.querySelector("#taskBtn")
 const taskList = document.querySelector("#taskList")
 const taskInput = document.querySelector("#taskInput")
 
-taskBtn.addEventListener("click", function(){
+function addTask(){
     const li = document.createElement('li');
     const taskInputValue = taskInput.value; 
     if (taskInputValue == ''){
@@ -20,4 +20,6 @@ taskBtn.addEventListener("click", function(){
     li.appendChild(button)
 
     taskList.appendChild(li);
+} 
+taskBtn.addEventListener("click", function(){
 })
